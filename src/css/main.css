@@ -1,5 +1,13 @@
 /* Variables */
 :root {
+  /* Colors */
+  --primary: #1B1A28;
+  --seconday: #FAF7F4;
+
+  /* Font */
+  --font-sans-serif: "Open Sans", sans-serif;
+  --font-serif: "Noto Serif", serif;
+
   /* Container Width */
   --container-sm: 540px;
   --container-md: 720px;
@@ -13,6 +21,28 @@
   --spacing-lg: 2rem; /* 32px */
   --spacing-xl: 3rem; /* 48px */
   --spacing-xxl: 4rem; /* 64px */
+}
+
+/* Base styling & Resets */
+* {
+  color: var(--primary);
+  font: 400 1rem var(--font-sans-serif);
+}
+html {
+  font-size: 16px;
+}
+body {
+  background-color: var(--seconday);
+  box-sizing: border-box;
+  margin: 0;
+  overflow-x: hidden;
+  padding: 0;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  padding: 0;
 }
 
 /* Grid System */
@@ -59,4 +89,3 @@
     padding: 0 calc((100vw - var(--container-xl) + var(--spacing-lg)) / 2);
   }
 }
-
