@@ -365,6 +365,9 @@ a:target {
   .catalogue_books-list {
     grid-template-columns: repeat(3, 1fr);
   }
+  .catalogue_btn-container {
+    margin-top: var(--spacing-lg);
+  }
 }
 @media (max-width: 991px) {
   .catalogue_books-list .book_container:nth-child(n+7) {
