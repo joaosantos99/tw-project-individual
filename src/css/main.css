@@ -285,6 +285,7 @@ p {
 
 /* Catalogue */
 .catalogue_wrapper {
+  border-bottom: 1px solid var(--primary);
   padding: var(--spacing-lg) 0 var(--spacing-xl);
 }
 .catalogue_title {
@@ -377,5 +378,28 @@ a:target {
 @media (min-width: 992px) {
   .catalogue_books-list {
     grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* Books Requests */
+.requests_wrapper {
+  border-bottom: 1px solid var(--primary);
+  padding: var(--spacing-lg) 0 var(--spacing-xl);
+}
+.requests_title {
+  text-align: center;
+}
+.requests_description {
+  text-align: center;
+  margin: var(--spacing-md) auto;
+  max-width: 500px;
+}
+.requests_btn-container {
+  display: flex;
+  justify-content: center;
+}
+@media (min-width: 768px) {
+  .requests_wrapper {
+    padding: var(--spacing-xl) 0;
   }
 }
