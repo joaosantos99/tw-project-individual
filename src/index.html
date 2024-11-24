@@ -3,28 +3,35 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book's Library</title>
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="public/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="public/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="public/favicon/favicon-16x16.png">
+    <!-- css -->
     <link rel="stylesheet" href="css/main.css">
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-    <title>Document</title>
   </head>
   <body>
     <!-- Navbar -->
     <nav class="navbar container-fluid">
       <div class="navbar_wrapper">
         <div class="navbar_logo-container">
-          <a href="./index.html">
+          <a href="./">
             <img src="./public/logo.svg" alt="Logo for a books library" />
           </a>
         </div>
 
         <ul class="navbar_link-list">
           <li><a>About us</a></li>
-          <li><a>Contacts</a></li>
+          <li><a href="contacts.html">Contacts</a></li>
         </ul>
       </div>
     </nav>
+    <!-- End of Navbar -->
 
     <!-- Main -->
     <main>
@@ -32,46 +39,51 @@
       <section class="hero container">
         <div class="hero_wrapper wrapper-spacing separator">
           <div class="hero_info-container">
+            <!-- Hero Text -->
             <h1 class="text-center text-left-md">
               Welcome to our online library!
             </h1>
             <p class="text-center text-left-md">
               We have a wide range of books for you to choose from. You can borrow them for free.
             </p>
-            <a href="#" class="btn btn-full">Explore Now</a>
+            <a href="catalogue/" class="btn btn-full">Explore Now</a>
           </div>
 
+          <!-- Hero Image -->
           <div class="hero_image-container">
             <img src="./public/images/hero-image.png" alt="A black and white image of library" />
           </div>
         </div>
       </section>
+      <!-- End of Hero -->
 
       <!-- Catalogue -->
       <section class="catalogue container">
         <div class="wrapper-spacing separator">
           <h2 class="text-center">Featured Books</h2>
 
+          <!-- Filters -->
           <div class="catalogue_filters-container">
             <ul class="catalogue-filters-list">
               <li class="catalogue_filter-item">
                 <a id="all" href="#all" class="btn btn-inverse">All</a>
               </li>
               <li class="catalogue_filter-item">
-                <a id="classics" href="#classics" class="btn btn-inverse">Classics</a>
+                <a id="classics" href="catalogue/classics.html" class="btn btn-inverse">Classics</a>
               </li>
               <li class="catalogue_filter-item">
-                <a id="fantasy" href="#fantasy" class="btn btn-inverse">Fantasy</a>
+                <a id="fantasy" href="catalogue/fantasy.html" class="btn btn-inverse">Fantasy</a>
               </li>
               <li class="catalogue_filter-item">
-                <a id="scifi" href="#scifi" class="btn btn-inverse">Sci-fi</a>
+                <a id="scifi" href="catalogue/sci-fi.html" class="btn btn-inverse">Sci-fi</a>
               </li class="catalogue_filter-item"s>
               <li>
-                <a id="horror" href="#horror" class="btn btn-inverse">Horror</a>
+                <a id="horror" href="catalogue/horror.html" class="btn btn-inverse">Horror</a>
               </li>
             </ul>
           </div>
 
+          <!-- Books List -->
           <div class="catalogue_books-container">
             <ul class="catalogue_books-list">
               <!-- Book 1 -->
@@ -171,12 +183,15 @@
                 </a>
               </li>
             </ul>
+
+            <!-- Show More Button -->
             <div class="catalogue_btn-container">
-              <a href="#" class="btn btn-full btn-inverse">Show More</a>
+              <a href="catalogue/" class="btn btn-full btn-inverse">Show More</a>
             </div>
           </div>
         </div>
       </section>
+      <!-- End of Catalogue -->
 
       <!-- Books Requests -->
       <section class="requests container">
@@ -190,16 +205,19 @@
          </div>
        </div>
       </section>
+      <!-- End of Books Requests -->
     </main>
 
     <!-- Footer -->
     <footer class="container">
       <div class="footer_wrapper wrapper-spacing">
+        <!-- Copyright Terms -->
         <div class="footer_copyright-container">
           <p>
             Copyright © 2024. All Rights Reserved.
           </p>
         </div>
+        <!-- Social Media Icons -->
         <div class="footer_social-media-container">
           <a href="#">
             <img src="./public/icons/facebook.svg" alt="Facebook icon" />
@@ -211,10 +229,12 @@
             <img src="./public/icons/x-twitter.svg" alt="Twitter icon" />
           </a>
         </div>
+        <!-- Links -->
         <div class="footer_links-container">
-          <a href="">Terms and Conditions</a>
+          <a href="terms-and-conditions.html">Terms and Conditions</a>
         </div>
       </div>
     </footer>
+    <!-- End of Footer -->
   </body>
 </html>
