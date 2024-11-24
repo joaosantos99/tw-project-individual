@@ -74,6 +74,10 @@ h2 {
   line-height: 1;
   letter-spacing: 0.1rem;
 }
+h3 {
+  font: 700 1.5rem var(--font-serif);
+  line-height: 1;
+}
 h5 {
   font: 500 1.25rem var(--font-serif);
   line-height: 1;
@@ -85,6 +89,9 @@ p {
 @media (min-width: 992px) {
   h1 {
     font-size: 3rem;
+  }
+  h2 {
+    font-size: 1.75rem;
   }
   p {
     line-height: 1.75;
@@ -401,5 +408,36 @@ a:target {
 @media (min-width: 768px) {
   .requests_wrapper {
     padding: var(--spacing-xl) 0;
+  }
+}
+
+/* Footer */
+.footer {
+  margin-top: var(--spacing-lg);
+  margin-bottom: var(--spacing-lg);
+}
+.footer p, .footer a {
+  font-size: 0.75rem;
+}
+.footer_wrapper {
+  align-items: center;
+  display: flex;
+  flex-direction: column-reverse;
+  gap: var(--spacing-md);
+}
+.footer_social-media-container {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  gap: var(--spacing-sm);
+}
+.footer_social-media-container img {
+  width: 24px;
+  height: 24px;
+}
+@media (min-width: 768px) {
+  .footer_wrapper {
+    flex-direction: row;
+    justify-content: space-between;
   }
 }
