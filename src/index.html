@@ -21,14 +21,83 @@
       <div class="navbar_wrapper">
         <div class="navbar_logo-container">
           <a href="./">
-            <img src="./public/logo.svg" alt="Logo for a books library" />
+            <img src="public/logo.svg" alt="Logo for a books library" />
           </a>
         </div>
 
-        <ul class="navbar_link-list">
-          <li><a>About us</a></li>
-          <li><a href="contacts.html">Contacts</a></li>
+        <!-- Mobile View -->
+        <div class="navbar_links-container-mobile">
+          <!-- Menu Icon -->
+          <div class="links_icon-container">
+            <a href="#sideMenu">
+              <image src="public/icons/menu.svg" alt="Menu icon" />
+            </a>
+          </div>
+
+          <!-- Side Menu -->
+          <div id="sideMenu" class="side-menu_container container-fluid">
+            <div class="side-menu_wrapper">
+              <div class="side_menu-navbar-wrapper">
+                <div class="navbar_logo-container">
+                  <a href="./">
+                    <img src="public/logo.svg" alt="Logo for a books library" />
+                  </a>
+                </div>
+                <div class="side-menu_close-icon">
+                  <a href="#">
+                    <img src="public/icons/close.svg" alt="Close icon" />
+                  </a>
+                </div>
+              </div>
+              <ul class="side-menu_links-list text-center">
+                <li class="side-menu_link-item">
+                  <a href="#">
+                    Home
+                  </a>
+                </li>
+                <li class="side-menu_link-item">
+                  <a href="catalogue/">
+                    Catalogue
+                  </a>
+                  <ul class="side-menu_sub-links-list">
+                    <li><a href="catalogue/classics.html">Classics</a></li>
+                    <li><a href="catalogue/fantasy.html">Fantasy</a></li>
+                    <li><a href="catalogue/sci-fi.html">Sci-fi</a></li>
+                    <li><a href="catalogue/horror.html">Horror</a></li>
+                  </ul>
+                </li>
+                <li class="side-menu_link-item">
+                  <a href="contacts.html">Contacts</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- End of Mobile View -->
+
+        <!-- Desktop View -->
+        <ul class="navbar_links-list">
+          <li class="navbar_link-item active">
+            <a href="#">
+              Home
+            </a>
+          </li>
+          <li class="navbar_link-item">
+            <a href="catalogue/">
+              Catalogue
+            </a>
+            <ul class="navbar_sub-links-list">
+              <li><a href="catalogue/classics.html">Classics</a></li>
+              <li><a href="catalogue/fantasy.html">Fantasy</a></li>
+              <li><a href="catalogue/sci-fi.html">Sci-fi</a></li>
+              <li><a href="catalogue/horror.html">Horror</a></li>
+            </ul>
+          </li>
+          <li class="navbar_link-item">
+            <a href="contacts.html">Contacts</a>
+          </li>
         </ul>
+        <!-- End of Desktop View -->
       </div>
     </nav>
     <!-- End of Navbar -->

@@ -3,6 +3,7 @@
   /* Colors */
   --primary: #1B1A28;
   --seconday: #FAF7F4;
+  --accent: #8A888E;
 
   /* Font */
   --font-sans-serif: "Open Sans", sans-serif;
@@ -57,6 +58,9 @@ img {
 }
 a {
   text-decoration: none;
+}
+a:hover {
+  color: var(--accent);
 }
 .text-center {
   text-align: center;
@@ -226,6 +230,98 @@ p {
   align-items: center;
   gap: var(--spacing-sm);
 }
+.navbar_links-container-mobile {
+  display: flex;
+  align-items: center;
+}
+.links_icon-container {
+  display: flex;
+  cursor: pointer;
+}
+.side-menu_container {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: -100vw;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--seconday);
+  transition: ease-in-out 0.5s left;
+}
+.side_menu-navbar-wrapper {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: var(--spacing-sm) 0;
+}
+.side-menu_links-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+  padding: var(--spacing-md) 0 0;
+}
+.side-menu_link-item a {
+  font: 500 1.75rem var(--font-serif);
+}
+.side-menu_sub-links-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xs);
+  padding: var(--spacing-xs) 0 0;
+}
+.side-menu_link-item .side-menu_sub-links-list a {
+  font: 400 1.25rem var(--font-sans-serif);
+}
+#sideMenu:target {
+  opacity: 1;
+  left: 0;
+}
+.navbar_links-list {
+  display: none;
+}
+@media (min-width: 768px) {
+  .navbar_links-container-mobile {
+    display: none;
+  }
+  .navbar_links-list {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-md);
+  }
+  .navbar_link-item {
+    position: relative;
+  }
+  .navbar_link-item:hover > a {
+    color: var(--accent);
+  }
+  .navbar_link-item.active a {
+    font-weight: 700;
+  }
+  .navbar_sub-links-list {
+    display: none;
+    background-color: var(--seconday);
+    border: 1px solid var(--primary);
+    border-radius: var(--border-radius-xs);
+    position: absolute;
+    top: 22px;
+  }
+  .navbar_link-item:hover .navbar_sub-links-list {
+    display: block;
+  }
+  .navbar_sub-links-list li {
+    cursor: pointer;
+  }
+  .navbar_sub-links-list a {
+    display: block;
+    padding: var(--spacing-xs) var(--spacing-sm);
+    text-align: center;
+    transition: ease-in-out 0.2s;
+  }
+  .navbar_sub-links-list a:hover {
+    background-color: var(--primary);
+    color: var(--seconday);
+  }
+}
 
 /* Hero */
 .hero_wrapper {
@@ -338,6 +434,7 @@ a:target {
 }
 .book_author {
   font: 400 0.80rem var(--font-sans-serif);
+  color: var(--accent);
   line-height: 1;
 }
 .catalogue_btn-container {
