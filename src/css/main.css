@@ -572,3 +572,8 @@ a:target {
     padding-left: var(--spacing-md);
   }
 }
+
+/* Terms and conditions page */
+.terms-content h2 {
+  margin-bottom: var(--spacing-md);
+}
