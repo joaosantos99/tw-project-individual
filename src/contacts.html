@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacts</title>
+    <title>Request a Book</title>
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="public/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="public/favicon/favicon-32x32.png">
@@ -21,25 +21,112 @@
       <div class="navbar_wrapper">
         <div class="navbar_logo-container">
           <a href="./">
-            <img src="./public/logo.svg" alt="Logo for a books library" />
+            <img src="public/logo.svg" alt="Logo for a books library" />
           </a>
         </div>
 
-        <ul class="navbar_link-list">
-          <li><a>About us</a></li>
-          <li><a>Contacts</a></li>
+        <!-- Mobile View -->
+        <div class="navbar_links-container-mobile">
+          <!-- Menu Icon -->
+          <div class="links_icon-container">
+            <a href="#sideMenu">
+              <image src="public/icons/menu.svg" alt="Menu icon" />
+            </a>
+          </div>
+
+          <!-- Side Menu -->
+          <div id="sideMenu" class="side-menu_container container-fluid">
+            <div class="side-menu_wrapper">
+              <div class="side_menu-navbar-wrapper">
+                <div class="navbar_logo-container">
+                  <a href="./">
+                    <img src="public/logo.svg" alt="Logo for a books library" />
+                  </a>
+                </div>
+                <div class="side-menu_close-icon">
+                  <a href="books/the-last-wish.html">
+                    <img src="public/icons/close.svg" alt="Close icon" />
+                  </a>
+                </div>
+              </div>
+              <ul class="side-menu_links-list text-center">
+                <li class="side-menu_link-item">
+                  <a href="books/the-last-wish.html">
+                    Home
+                  </a>
+                </li>
+                <li class="side-menu_link-item">
+                  <a href="catalogue/">
+                    Catalogue
+                  </a>
+                  <ul class="side-menu_sub-links-list">
+                    <li><a href="catalogue/classics.html">Classics</a></li>
+                    <li><a href="catalogue/fantasy.html">Fantasy</a></li>
+                    <li><a href="catalogue/sci-fi.html">Sci-fi</a></li>
+                    <li><a href="catalogue/horror.html">Horror</a></li>
+                  </ul>
+                </li>
+                <li class="side-menu_link-item">
+                  <a href="contacts.html">Contacts</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- End of Mobile View -->
+
+        <!-- Desktop View -->
+        <ul class="navbar_links-list">
+          <li class="navbar_link-item active">
+            <a href="books/the-last-wish.html">
+              Home
+            </a>
+          </li>
+          <li class="navbar_link-item">
+            <a href="catalogue/">
+              Catalogue
+            </a>
+            <ul class="navbar_sub-links-list">
+              <li><a href="catalogue/classics.html">Classics</a></li>
+              <li><a href="catalogue/fantasy.html">Fantasy</a></li>
+              <li><a href="catalogue/sci-fi.html">Sci-fi</a></li>
+              <li><a href="catalogue/horror.html">Horror</a></li>
+            </ul>
+          </li>
+          <li class="navbar_link-item">
+            <a href="contacts.html">Contacts</a>
+          </li>
         </ul>
+        <!-- End of Desktop View -->
       </div>
     </nav>
-
+    <!-- End of Navbar -->
+    <!-- Main Content -->
+    <main>
+      <section class="contact container">
+        <div class="contact_wrapper wrapper-spacing separator">
+          <h2 class="text-center">Request a book</h2>
+          <form action="#">
+            <input type="text" name="name" id="name" placeholder="Name" required />
+            <input typer="email" name="email" id="email" placeholder="Email" required />
+            <input type="text" name="book" id="book" placeholder="Book title" required />
+            <textarea name="message" id="message" placeholder="Message" required></textarea>
+            <button type="submit">Send request</button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <!-- End of Main Content -->
     <!-- Footer -->
     <footer class="container">
       <div class="footer_wrapper wrapper-spacing">
+        <!-- Copyright Terms -->
         <div class="footer_copyright-container">
           <p>
             Copyright © 2024. All Rights Reserved.
           </p>
         </div>
+        <!-- Social Media Icons -->
         <div class="footer_social-media-container">
           <a href="https://www.facebook.com" target="_blank">
             <img src="./public/icons/facebook.svg" alt="Facebook icon" />
@@ -51,10 +138,12 @@
             <img src="./public/icons/x-twitter.svg" alt="Twitter icon" />
           </a>
         </div>
+        <!-- Links -->
         <div class="footer_links-container">
-          <a href="">Terms and Conditions</a>
+          <a href="terms-and-conditions.html">Terms and Conditions</a>
         </div>
       </div>
     </footer>
+    <!-- End of Footer -->
   </body>
 </html>

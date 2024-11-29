@@ -577,3 +577,49 @@ a:target {
 .terms-content h2 {
   margin-bottom: var(--spacing-md);
 }
+
+/* Contact page */
+.contact_wrapper {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 23vh;
+}
+
+
+/* Forms */
+form {
+  display: flex;
+  flex-direction: column;
+  row-gap: var(--spacing-md);
+  margin-top: var(--spacing-lg);
+  max-width: 500px;
+  width: 100%;
+}
+input {
+  background: var(--seconday);
+  border: 1px solid var(--primary);
+  color: black;
+  padding: var(--spacing-xs) var(--spacing-md);
+}
+textarea {
+  background: var(--seconday);
+  border: 1px solid var(--primary);
+  color: black;
+  padding: var(--spacing-xs) var(--spacing-md);
+  height: 100px;
+}
+button[type="submit"] {
+  background-color: var(--primary);
+  border: solid 1px var(--primary);
+  color: var(--seconday);
+  cursor: pointer;
+  font: 400 1rem var(--font-serif);
+  padding: var(--spacing-sm) var(--spacing-md);
+  border-radius: var(--border-radius-xs);
+  transition: ease-in-out 0.1s;
+}
+button[type="submit"]:hover {
+  background-color: var(--seconday);
+  color: var(--primary);
+}
